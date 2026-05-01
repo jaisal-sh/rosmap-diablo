@@ -1,0 +1,26 @@
+# raw data stays local — never push patient-level data to GitHub
+data/
+*.csv
+*.tsv
+*.xlsx
+*.xls
+
+# R session and environment files
+.Rhistory
+.RData
+.Rproj.user
+*.Rproj
+
+# results with individual-level data
+results/01_matched_samples.RData
+results/02_preprocessed_matrices.RData
+
+# keep the model output and figures — these are analysis results, not raw data
+!results/03_diablo_model.RData
+!results/biomarker_summary.csv
+!results/session_info.txt
+!figures/
+
+# OS clutter
+.DS_Store
+Thumbs.db
